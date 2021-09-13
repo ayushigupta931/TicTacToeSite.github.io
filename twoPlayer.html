@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./twoPlayerStyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id ="options">
+        <div class="name">
+            <span>X</span>
+            <span>Player 1 :</span>
+            <input type="text" id="P1name" placeholder="PLAYER 1">
+        </div>
+        <div class="name">
+            <span>O</span>
+            <span>Player 2 :</span>
+            <input type="text" id="P2name" placeholder="PLAYER 2">
+        </div>
+        <button id="play" class="btn">PLAY</button>
+    </div>
+
+   
+
+    <div id="base">
+        <div class="players">
+            <div id="player_one" class="player">
+                <p id="player_1">PLAYER 1</p>
+                <p id="player_1_score">0</p>
+            </div>
+            <div id="player_two" class="player">
+                <p id="player_2">PLAYER 2</p>
+                <p id="player_2_score">0</p>
+            </div>
+           
+        </div>
+        <div id="message">status</div>
+<div class="board">
+    <div id="row_1" class="rows">
+        <button id="button_1" class="button"></button>
+        <button id="button_2" class="button"></button>
+        <button id="button_3" class="button"></button>
+    </div>
+    <div id="row_2" class="rows">
+        <button id="button_4" class="button"></button>
+        <button id="button_5" class="button"></button>
+        <button id="button_6" class="button"></button>
+    </div>
+    <div id="row_3"class="rows">
+        <button id="button_7" class="button"></button>
+        <button id="button_8" class="button"></button>
+        <button id="button_9" class="button"></button>
+    </div>
+    </div>
+    <div id="playAgain">Click here to play again!</div>
+    <button id="reset" class="btn">RESET</button>
+    </div>
+
+   
+    
+    <script src="./TwoPlayer.js"></script>
+</body>
+
+</html>

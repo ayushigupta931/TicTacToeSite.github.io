@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./onePlayerStyle.css">
+
+    <!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="options">
+        <div class="name opt">
+            <p>Enter your name :</p>
+            <input type="text" id="name" placeholder="PLAYER">
+        </div>
+        <div class="chooseXO opt">
+            <p>Choose your shape :</p>
+            <button id="cross" class="Button" placeholder="X"> X </button>
+            <button id="zero" class="Button"> O </button>
+        </div>
+        <div class="startTheGame opt">
+            <p>Do you want to make first move?</p>
+            <button id="yes" class="Button"> Yes </button>
+            <button id="no" class="Button"> No </button>
+        </div>
+        <button id="play" class="btn btns">PLAY</button>
+    </div>
+
+    <div id="base">
+        <div class="players">
+            <div id="player" class="player">
+                <p id="player_name">PLAYER</p>
+                <p id="player_score">0</p>
+            </div>
+            <div id="bot" class="player">
+                <p id="bot">BOT</p>
+                <p id="bot_score">0</p>
+            </div>
+        </div>
+        <div id="message">status</div>
+
+<div class="board">
+    <div id="row_1" class="rows">
+        <button id="button_1" class="button"></button>
+        <button id="button_2" class="button"></button>
+        <button id="button_3" class="button"></button>
+    </div>
+    <div id="row_2" class="rows">
+        <button id="button_4" class="button"></button>
+        <button id="button_5" class="button"></button>
+        <button id="button_6" class="button"></button>
+    </div>
+    <div id="row_3"class="rows">
+        <button id="button_7" class="button"></button>
+        <button id="button_8" class="button"></button>
+        <button id="button_9" class="button"></button>
+    </div>
+    </div>
+
+    <div id="playAgain">Click here to play again!</div>
+
+    <button id="reset" class="btn btns">RESET</button>
+    </div>
+
+    <script src="./OnePlayer.js"></script>
+</body>
+</html>
